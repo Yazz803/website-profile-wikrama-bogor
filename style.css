@@ -1,0 +1,586 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    background-image: linear-gradient(
+        rgba(73, 49, 207, 0.438),
+        rgba(205, 196, 255, 0.418)
+    ),
+    url(img/GedungWikrama.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* topnav buat mobile */
+/* Add a black background color to the top navigation */
+.topnav {
+    background-image: linear-gradient(
+        rgb(255, 255, 255), 
+        white
+    );
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid rgb(155, 155, 155);
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav img {
+      width: 20px;
+      transform: scale(2);
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #04AA6D;
+    color: black;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    color: black;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 700px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 700px) {
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+/* end topnav */
+/* dropdown btn */
+.dropdown-btn {
+    padding: 5% 10%;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .dropdown-btn:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      font-weight: bold;
+      color: black;
+  }
+  .active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-weight: bold;
+  }
+  .dropdown-container.one {
+    display: none;
+    background-color: #000000cc;
+    position: absolute;
+    left: 100%;
+    top: 54.5%;
+    width: 200px;
+  }.dropdown-container.two {
+    display: none;
+    background-color: #000000cc;
+    position: absolute;
+    left: 100%;
+    top: 42.5%;
+    width: 250px;
+  }
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+/* end dropdown btn */
+.clear {
+    clear: both;
+}
+
+.sidenav {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.sidenav img {
+    margin: 10% 18%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.sidenav h1 {
+    color: white;
+    font-size: 25px;
+    margin: -10% 0% 10% 13%;
+}
+.sidenav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5% 10%;
+    text-align: left;
+}
+.sidenav a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-weight: bold;
+}
+
+/* main home */
+.main {
+    margin-left: 320px;
+    margin-right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home {
+    height: 623px;
+}
+.logo-responsive {
+    display: none;
+}
+.main.home h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    line-height: 623px;
+}
+.main.home span {
+    color: rgb(22, 22, 189);
+    text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 4px white;
+}
+/* end main home */
+
+/* main sejarah */
+.sejarah {
+    background-color: rgba(255, 255, 255, 1);
+    color: white;
+    padding: 1.5% 2%;
+    margin-top: -1%;
+}
+.foto img {
+    width: 74.3%;
+    margin-left: 320px;
+}
+.foto img:hover {
+    transition: .5s;
+    transform: scale(1.02);
+}
+.sejarah h2 {
+    margin-bottom: 0;
+    color: black;
+}
+.sejarah span {
+    font-weight: bold;
+}
+.sejarah p {
+    line-height: 25px;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+}
+.sejarah ul {
+    padding-inline-start: 18px;
+}
+.sejarah ul li {
+    padding-bottom: 5px;
+    line-height: 25px;
+    color: black;
+    font-size: 18px;
+}
+/* end main sejarah */
+
+/* matrikulasi */
+.matrikulasi {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 1% 2%;
+}
+.foto-matrikulasi {
+    height: 300px;
+    background-image: url(img/matrikulasi1.JPG);
+    width: 74.3%;
+    margin-left: 320px;
+    background-position-y: -120px;
+    background-size: cover;
+}
+.matrikulasi h2 {
+    margin-bottom: 0;
+    color: black;
+}
+.matrikulasi p {
+    line-height: 25px;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+}
+.matrikulasi .matrikulasi-img img {
+    float: right;
+    width: 35%;
+    margin-left: 2%;
+    border-radius: .5em/2em;
+}
+/* end matrikulasi */
+
+/* kantin */
+.kantin {
+    background-color: rgba(255, 255, 255, 1);
+    color: white;
+    padding: 1% 2%;
+}
+.foto-kantin {
+    height: 300px;
+    background-image: url(img/kantin1.jpg);
+    width: 74.3%;
+    margin-left: 320px;
+    background-position-y: -200px;
+    background-size: cover;
+}
+.kantin h2 {
+    margin-bottom: 0;
+    color: black;
+}
+.kantin .kantin-img img {
+    float: right;
+    width: 35%;
+    margin-left: 2%;
+    border-radius: .5em/2em;
+}
+.kantin p {
+    line-height: 25px;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+}
+/* end kantin */
+
+/* perpus */
+.perpus {
+    background-color: rgba(255, 255, 255, 1);
+    color: white;
+    padding: 1% 2%;
+}
+.foto-perpus {
+    height: 300px;
+    background-image: url(img/perpus8.jpg);
+    width: 74.3%;
+    margin-left: 320px;
+    background-position-y: -100px;
+    background-size: cover;
+}
+.perpus h2 {
+    margin-bottom: 0;
+    color: black;
+}
+.perpus p {
+    line-height: 25px;
+    color: black;
+    font-size: 18px;
+}
+.perpus ul {
+    padding-inline-start: 18px;
+}
+.perpus li {
+    line-height: 25px;
+    color: black;
+    font-size: 18px;
+}
+.perpus-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.perpus-img img {
+    width: 48%;
+    margin: 1%;
+}
+.perpus span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.perpus a {
+    color: black;
+    text-shadow: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+.perpus a:hover {
+    text-decoration: underline;
+}
+/* end perpus */
+
+/* contact2 */
+.contact2 {
+    background-image: linear-gradient(
+        rgb(49, 51, 172),
+        rgb(17, 0, 255)
+    );
+    color: white;
+    padding: 20px 2%;
+    margin-left: 320px;
+    margin-right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.contact-info {
+    width: 45%;
+    float: left;
+}
+.contact-info a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.contact-info p {
+    margin: 0;
+    padding-top: 5px;
+}
+.contact-info svg {
+    float: left;
+    margin-right: 20px;
+}
+
+/* socialmedia */
+.socialmedia {
+    width: 45%;
+    margin-left: 5%;
+    float: left;
+}
+.socialmedia a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.socialmedia p {
+    margin: 0;
+    padding-top: 5px;
+}
+.socialmedia svg {
+    float: left;
+    margin-right: 20px;
+}
+
+/* footer */
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 30px;
+    margin-left: 320px;
+    margin-right: 2%;
+}
+footer p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* responsive */
+@media (max-width: 1000px) {
+    .topnav {
+        display: block;
+    }
+    .sidenav {
+        display: none;
+    }
+    .home {
+        height: 300px;
+    }
+    .logo-responsive {
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-around;
+        opacity: .5;
+        margin-top: -280px;
+    }
+    .main.home h1 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 280px;
+    }
+    .main {
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+    .sejarah p, .sejarah ul li, .matrikulasi p, 
+    .kantin p, .perpus p, .perpus li, .perpus a {
+        font-size: 14px;
+        text-align: left;
+    }
+    .sejarah h2, .matrikulasi h2, .kantin h2, .perpus h2 {
+        text-align: center;
+    }
+    .matrikulasi .matrikulasi-img img {
+        width: 300px;
+        float: none;
+        margin-left: 14%;
+    }
+    .kantin .kantin-img img {
+        width: 300px;
+        margin-left: 14%;
+        float: none;
+    }
+
+    /* new */
+    .foto img, .foto-kantin, .foto-matrikulasi, 
+    .foto-perpus {
+        margin-left: 0;
+        width: 100%;
+        background-position-y: 0;
+        margin-top: 50px;
+    }
+    /* contact2 */
+    .contact2 {
+        padding: 5%;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .contact-info {
+        float: none;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .contact-info h3 {
+        margin-bottom: 0;
+    }
+    .contact-info hr {
+        display: none;
+    }
+    .contact-info svg, .contact-info p {
+        margin-top: 5%;
+    }
+    .socialmedia {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .socialmedia h3 {
+        margin-bottom: 0;
+    }
+    .socialmedia hr {
+        display: none;
+    }
+    .socialmedia svg, .socialmedia p {
+        margin-top: 5%;
+    }
+    /* end contact2 */
+    /* footer */
+    footer {
+        padding: 30px 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer p {
+        font-size: 11px;
+        text-align: center;
+    }
+    /* end new */
+}
+/* end responsive */
