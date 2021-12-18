@@ -104,6 +104,7 @@ body::before {
     text-decoration: none;
     display: block;
     text-align: left;
+    border-right: 2px solid blue;
   }
   
   /* Add a dark background on topnav links and the dropdown button on hover */
