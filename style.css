@@ -80,7 +80,7 @@ body::before {
     border: none;
     outline: none;
     color: black;
-    padding: 14px 16px;
+    padding: 14px 19px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -90,7 +90,7 @@ body::before {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -577,12 +577,14 @@ footer p {
     .matrikulasi .matrikulasi-img img {
         width: 300px;
         float: none;
-        margin-left: 14%;
+        display: block;
+        margin: 20px auto;
     }
     .kantin .kantin-img img {
         width: 300px;
-        margin-left: 14%;
         float: none;
+        display: block;
+        margin: 20px auto;
     }
 
     /* new */
