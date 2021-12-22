@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SMK Wikrama Bogor</title>
+</head>
+<body>
+    
+    <!-- tombol -->
+    <div class="tombol">
+        <a href="#list-jurusan">
+            <svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M15.251,0.279L0.307,15.223  c-0.202,0.202-0.301,0.467-0.299,0.731c0,0.008-0.004,0.014-0.004,0.022l0,15c0,0.552,0.448,1,1,1c0.008,0,0.014-0.004,0.022-0.004  c0.264,0.002,0.529-0.097,0.731-0.299l14.246-14.246l14.277,14.277c0.401,0.401,1.051,0.401,1.452,0  c0.238-0.238,0.317-0.561,0.273-0.87V16.122c0.044-0.309-0.035-0.632-0.273-0.87L16.76,0.28c-0.208-0.208-0.482-0.303-0.755-0.295  C15.733-0.023,15.459,0.072,15.251,0.279z M30.004,16.428v12.096L16.76,15.28c-0.208-0.208-0.482-0.303-0.755-0.295  c-0.272-0.008-0.546,0.087-0.754,0.295L2.004,28.526V16.425L16.003,2.427L30.004,16.428z" fill="white" fill-rule="evenodd" id="Border_Arrow_Up"/><g/><g/><g/><g/><g/><g/></svg>
+        </a>
+    </div>
+    <!-- end tombol -->
+
+    <!-- List jurusan untuk mobile -->
+    <div class="list-jurusan" id="list-jurusan">
+        <h2>List Jurusan</h2>
+        <ul>
+            <li><a href="#RPL">Rekayasa Perangkat lunak (RPL)</a></li>
+            <li><a href="#otkp">Otomatisasi dan Tata Kelola Perkantoran (OTKP)</a></li>
+            <li><a href="#tkj">Teknik Jaringan dan Komputer (TKJ)</a></li>
+        </ul>
+    </div>
+    <!-- end list jurusan untuk mobile -->
+
+    <!-- topnav buat mobile -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><img src="img/logo-wk.png" alt=""></a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Content
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="sejarah.html">Sejarah Wikrama</a>
+            <a href="matrikulasi.html">Matrikulasi</a>
+            <a href="kantin.html">Kantin Wikrama</a>
+            <a href="perpus.html">Perpustakaan Wikrama</a>
+          </div>
+
+        </div>
+        <a href="jurusan.html">Jurusan</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+      <script>
+          /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+      </script>
+
+    <!-- end topnav -->
+    <div class="sidenav">
+        <img src="img/logo-wk.png" alt="Logo Wikrama">
+        <h1>SMK Wikrama Bogor</h1>
+        <a href="index.html">
+            Home
+        </a>
+        <button class="dropdown-btn">Content
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container two">
+          <a href="sejarah.html">Sejarah Wikrama</a>
+          <a href="matrikulasi.html">Matrikulasi</a>
+          <a href="kantin.html">Kantin Wikrama</a>
+          <a href="perpus.html">Perpustakaan Wikrama</a>
+        </div>
+        <button class="dropdown-btn">Jurusan
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container one">
+            <a href="jurusan.html#RPL">Rekayasa Perangkat Lunak</a>
+            <a href="jurusan.html#otkp">Otomatisasi dan Tata Kelola Perkantoran</a>
+            <a href="jurusan.html#tkj">Teknik Komputer dan Jaringan</a>
+            <a href="#">Lorem Ipsum</a>
+          </div>
+          
+        <!-- script -->
+        <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+              var i;
+
+              for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+              });
+              }
+        </script>
+        <!-- end script -->
+          <a href="contact.html">
+              Contact
+          </a>
+    </div>
+
+    <div class="main jurusan">
+        <div class="RPL" id="RPL">
+            <div class="foto-rpl"></div>
+            <div class="tentang-rpl">
+                <h2>Rekayasa Perangkat Lunak (RPL)</h2>
+                <hr>
+                <p><span>Berdiri/Akreditasi: </span>Didirikan  pada Tahun 2003 dengan akreditasi  <span>A</span> (amat baik)</p>
+                <p><span>Keahlian:</span></p>
+                <ol type="1">
+                    <li>Memiliki kemampuan menjelaskan dan menerapkan ilmu matematika dan ilmu komputer dasar sebagai basis pembangunan sebuah perangkat lunak yang berkualitas.</li>
+                    <li>Memiliki kemampuan menjelaskan, menerapkan, dan memilih berbagai teori, model, teknik dan teknologi yang tepat dalam pembangunan perangkat lunak yang berkualitas pada lingkungan berbasis web, desktop dan mobile.</li>
+                    <li>Merancang solusi perangkat lunak berbasis web, desktop dan mobile dalam berbagai skala kompleksitas yang mengintegrasikan persoalan ethical, social, legal, security dan ekonomi.</li>
+                    <li>Terampil menggunakan teknologi dan tools terkini dalam pembangunan perangkat lunak yang berkualitas pada lingkungan berbasis web dan mobile.</li>
+                    <li>Menerapkan profesionalisme dalam berkarya sesuai dengan etika bidang Rekayasa Perangkat Lunak.</li>
+                    <li>Berkomunikasi secara efektif pada berbagai kalangan baik secara lisan maupun tulisan.</li>
+                    <li>Mengikuti perkembangan berbagai teknik, teknologi dan tools baru dalam bidang rekayasa perangkat lunak pada lingkungan berbasis web, desktop dan mobile.</li>
+                    <li>Bekerjasama secara efektif baik sebagai anggota tim maupun pemimpin tim pada proyek pembangunan perangkat lunak.</li>
+                    <li>Mengidentifikasi kebutuhan untuk menjadi seorang wirausaha/pebisnis dibidang industri kreatif khususnya dalam pengembangan perangkat lunak.</li>
+                </ol>
+                <p><span>Model Belajar : </span>Teaching Factory</p>
+                <p><span>Pohon Kompetensi : </span></p>
+                <p><span>CBT : </span>Kegiatan Competency Based Training (CBT) bertujuan untuk menumbuhkembangkan karakter dan etos kerja (disiplin, tanggung jawab, jujur, kerjasama, kepemimpinan, dan lain-lain) yang dibutuhkan DU/DI serta meningkatkan kualitas hasil pembelajaran. Kegiatan CBT Rekayasa Perangkat Lunak meliputi kegiatan dimulai dari mencari proyek baik dari internal/eksternal sekolah, mengidentifikasi kebutuhan pemberi proyek (requirements), melakukan desain proyek (design), melakukan implementasi (coding), dan melakukan pengujian proyek (testing).</p>
+                <p><span>Keunggulan : </span>Desktop Programming, Web Programming, Mobile Programming, Bussiness Analyst, Database Administration.</p>
+                <div class="rpl-img">
+                    <div class="img-jurusanrpl1">
+                        <img src="img/jurusan-rpl.JPG" alt="RPL Image">
+                    </div>
+                    <div class="img-jurusanrpl2">
+                        <img src="img/jurusan-rpl1.JPG" alt="RPL Image">
+                    </div>
+                    <div class="img-jurusanrpl1">
+                        <img src="img/jurusan-rpl2.JPG" alt="RPL Image">
+                    </div>
+                    <div class="img-jurusanrpl3">
+                        <img src="img/jurusan-rpl3.JPG" alt="RPL Image">
+                    </div>
+                    <div class="img-jurusanrpl4">
+                        <img src="img/jurusan-rpl4.JPG" alt="RPL Image">
+                    </div>
+                    <div class="img-jurusanrpl5">
+                        <img src="img/jurusan-rpl5.JPG" alt="RPL Image">
+                    </div>
+                    <p style="color: rgb(15, 15, 15);font-size: 13px;margin: .5%;"><i>KBM Kompetensi Keahlian Rekayasa Perangkat Lunak</i></p>
+                </div>
+                <p><span>Mitra Industri</span></p>
+                <ol type="1">
+                    <li style="text-align:justify"><span style="font-size:14px">PT Sakura System - Software house di bawah Nippon Steel - Jakarta Pusat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT Anabatic Technology - IT Solution dengan taraf Internasional - Tangerang </span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT Astra Autopart Cibitung -&nbsp; Sistem Kaizen - Software Development &ndash; Bekasi</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT Fujitech</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT Epson</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT Amerta Indah Otsuka - Pasar Rebo Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Honoris - Ciawi Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Nittoh Presisi Indonesia - Jl. Raya Jakarta Bogor KM 47, Nanggewer Mekar Cibinong</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Hitachi Indonesia &ndash; Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT Hilex &ndash; Tangerang</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Reksa Digitama - Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">CV. Kunci Sukses Muamalah</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Stams Lancar Jaya</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Honda Prospect Motor &ndash; Jakarta Utara</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Gemms Solution Indonesia &ndash; Jakarta Utara</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Grup Riset Potensial &ndash; Jakarta Pusat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Multipoplar Technology Tbk. &ndash; Tangerang, Banten</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Jessindo Prakarsa &ndash; Kota Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">BPR Dana Mandiri Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Karada Sehat Indonesia &ndash; Jakarta Barat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Gateway Internusa &ndash; Kota Tangerang</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Total Solusi Teknologi &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Sherlock Swiss &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. PP (Persero) Tbk. &ndash; Cisarua, Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Abu Corp &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">RS MH Thamrin Cileungsi &ndash; Cileungsi, Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">STIE Tazkia &ndash; Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. JUKE SOLUTIONS TEKNOLOGI &ndash; Jakarta Pusat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Daftrun Technology &ndash; Depok</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Rajamobil Media &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. CITACONTRAC (Mitra PLN) &ndash; Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. SWIFECT SOLUSI INDONESIA &ndash; Jakarta Barat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Parikesit Indotama &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Badan Nasional Penanggulangan Bencana - Citeureup &ndash; Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Mede Media Softika &ndash; Jakarta Pusat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Jaringan Intech Indonesia &ndash; Jakarta Pusat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Daehan Global &ndash; Citeureup, Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Echoscript Indonesia &ndash; Karawang</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">4 VISION MEDIA &ndash; Bandung</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Aksimaya &ndash; Bogor Utara</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Antavaya Tour &ndash; Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Arfadia &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Bank Bukopin &ndash; Sukabumi</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">CV. Jamrudt &ndash; Ciawi, Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Gerbang Indonesia Teknologi, PT. (Dreamcube) &ndash; Kota Bogor</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">GSMKonsep &ndash; Jakarta Pusat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Kenjalo (Global Technology Resources) &ndash; Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Ninesavana &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Pengadilan Negeri Jakarta Barat &ndash; Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">Private Leasure Indonesia &ndash; Wilayah Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Baranusa Danatama Group &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Central Capital Futures &ndash; Jakarta Pusat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Fatiha Sakti (Fast8) &ndash; Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Gama inti wahana &ndash; Wilayah Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Giosis &ndash; Jakarta Selatan</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Global Dimensi Mandiri &ndash; Bekasi</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Go Online Solusi &ndash; Jakarta Barat</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Hanoman Cendekia Interaktif &ndash; Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Hastacacitra Pastika &ndash; Jakarta</span></li>
+                    <li style="text-align:justify"><span style="font-size:14px">PT. Hastings Mitratama &ndash; Jakarta Utara, dll.</span></li>
+                </ol>
+                <p><span>Fasilitas dan Sarpras : </span>Lab, software house, Teaching Factory</p>
+                <p><span>Sertifikasi : </span>TOEIC Test (Test of English International Communication), Microsoft Technology Associate (Office, HTML 5, Database Fundamental)</p>
+                <div class="rpl-img">
+                    <div class="img-jurusanrpl6">
+                        <img src="img/jurusan-rpl6.jpg" alt="RPL Image">
+                    </div>
+                    <div class="img-jurusanrpl7">
+                        <img src="img/jurusan-rpl7.jpg" alt="RPL Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="otkp" id="otkp">
+            <div class="foto-otkp"></div>
+            <div class="tentang-otkp">
+                <h2>Otomatisasi dan Tata Kelola Perkantoran</h2>
+                <hr>
+                <p><span>Berdiri/Akreditasi : </span>Kompetensi keahlian Otomatisasi dan Tata Kelola Perkantoran/Administrasi Perkantoran didirikan pada tahun 1996 dengan akreditasi A (amat baik)</p>
+                <p><span>Keahlian : </span>Mengetik cepat dengan teknik 10 jari dengan rata-rata kecepatan 250 EPM 98%, mengelola dokumen dan arsip kantor, menangani telepon, mengelola keuangan dan mampu menangani tamu</p>
+                <p><span>Model Belajar : </span><i>Teaching Factory</i></p>
+                <p><span>Pohon Kompetensi : </span></p>
+                <p><span>CBT : </span>CBT dilakukan selama 5 hari oleh peserta didik kelas XI, dari pukul 07.30 s/d 16.00 WIB ditempatkan diberbagai unit seperti tata usaha, kurikulum, kesiswaan,    koperasi, perpustakaan, ruang kepala jurusan, guru mata pelajaran, BP/BK.</p>
+                <p><span>Keunggulan : </span>Kompetensi keahlian Otomatisasi dan Tata Kelola Perkantoran/Administrasi Perkantoran memiliki keunggulan dibidang prestasi peserta didik seperti juara II lomba keterampilan siswa bidang lomba sekretaris tingkat provinsi tahun 2016 dan juara I lomba olimpiade sekretaris tingkat nasional tahun 2017</p>
+                <div class="otkp-img">
+                    <div class="img-otkp1">
+                        <img src="img/jurusan-otkp1.JPG" alt="OTKP Image">
+                    </div>
+                    <div class="img-otkp2">
+                        <img src="img/jurusan-otkp2.JPG" alt="OTKP Image">
+                    </div>
+                    <div class="img-otkp3">
+                        <img src="img/jurusan-otkp3.JPG" alt="OTKP Image">
+                    </div>
+                    <div class="img-otkp4">
+                        <img src="img/jurusan-otkp5.jpg" alt="OTKP Image">
+                    </div>
+                    <p style="color: rgb(15, 15, 15);font-size: 13px;margin: .5%;"><i>KBM Kompetensi Keahlian Otomatisasi dan Tata kelola Perkantoran</i></p>
+                </div>
+                <p><span>Mitra Industri : </span></p>
+                <ol type="1">
+                    <li><span style="font-size:14px">Danone Aqua &ndash; Jl. Mayjen HE . Sukma, Caringin, Bogor</span></li>
+                    <li><span style="font-size:14px">CV. Prima Utama Bogor &ndash; wilayah Bogor</span></li>
+                    <li><span style="font-size:14px">CV. Delima Mandiri &ndash; Kota Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Solid Gold Berjangka &ndash; Jakarta Pusat</span></li>
+                    <li><span style="font-size:14px">PT. Telkom Indonesia &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">PT. Myindo Cyber Media &ndash; Jakarta Selatan</span></li>
+                    <li><span style="font-size:14px">PT. Lotus Boga Lima &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">PT. Tatamulia Nusantara Indah &ndash; wilayah Jakarta</span></li>
+                    <li><span style="font-size:14px">PT. Yongjin Javasuka Garment&nbsp;&ndash; Sukabumi</span></li>
+                    <li><span style="font-size:14px">Que Bread Bakery (kuntum farm field) &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">ICMI Travel &ndash; Jakarta Pusat</span></li>
+                    <li><span style="font-size:14px">Rumah Sakit Mitra Keluarga Cibubur &ndash; Bekasi</span></li>
+                    <li><span style="font-size:14px">PP University &ndash; Cisarua, Bogor</span></li>
+                    <li><span style="font-size:14px">Perwiratama Group &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Laxmirani Mitra Garmindo &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">Royal Hotel Djuanda Bogor &ndash; Bogor Tengah</span></li>
+                    <li><span style="font-size:14px">Badan Pendidikan dan Pelatihan Anggaran dan Perbendaharaan (Kementerian Keuangan BPPK) &ndash; Jakarta Selatan</span></li>
+                    <li><span style="font-size:14px">PT. Excellera Consultant &ndash; Jakarta Selatan</span></li>
+                    <li><span style="font-size:14px">PT. Agrinesia Raya &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Indo Prima Semesta &ndash; Bogor Utara</span></li>
+                    <li><span style="font-size:14px">PT. Aura Cantik Indonesia &ndash; Jakarta Utara</span></li>
+                    <li><span style="font-size:14px">PT. Bonna Indonesia &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">Shakti Top Finance &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">PT. Sofie Mode Huis</span></li>
+                    <li><span style="font-size:14px">Tb Satria Baja &ndash; Depok</span></li>
+                    <li><span style="font-size:14px">PT. Naila Syafaah Wisata Mandiri &ndash; Tangerang Selatan</span></li>
+                    <li><span style="font-size:14px">Hotel pesona alam resort &ndash; Cisarua, Bogor</span></li>
+                    <li><span style="font-size:14px">Unity &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">Venice Gallery &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Dinamis Artha Sentosa &ndash; Depok</span></li>
+                    <li><span style="font-size:14px">RS Vania &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">Trimitrasis &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">PT. Ardendi Jaya Sentosa (AOP) &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Dasan Pan Pacific Indonesia &ndash; Sukabumi</span></li>
+                    <li><span style="font-size:14px">PT Twintek &ndash; Sukabumi</span></li>
+                    <li><span style="font-size:14px">CV Prima Utama Bogor &ndash; Wilayah Bogor</span></li>
+                    <li><span style="font-size:14px">Matahari Departement Store &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Bangun Kharisma Prima &ndash; Jakarta Barat</span></li>
+                    <li><span style="font-size:14px">PT. Besmart Global Indonesia &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">PT City Directory Online &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">PT. Indomarco Prismatama &ndash; Cibinong, Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Jasa Marga &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Milko Beverage Industri &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Quantum Boga Makmur &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">PT. Tatamulia Nusantara Indah &ndash; Jakarta</span></li>
+                    <li><span style="font-size:14px">PT. Astra Otoparts &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">PT. Lidosarana Prima &ndash; Sukabumi</span></li>
+                    <li><span style="font-size:14px">PT. Suryamas Dutamakmur, Tbk &ndash; Bogor</span></li>
+                    <li><span style="font-size:14px">Politeknik Kent Bogor &ndash; Bogor, dll.</span></li>
+                </ol>
+                <p><span>Sertifikasi : </span>TOEIC (Test of English for International Communication), tes mengetik internasional (typingweb.com), Microsoft Office Specialist (MOS – Certiport)</p>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="tkj" id="tkj">
+            <div class="foto-tkj"></div>
+            <div class="tentang-tkj">
+                <h2>Teknik Komputer dan Jaringan (TKJ)</h2>
+                <hr>
+                <p><span>Berdiri/Akreditasi : </span>Kompetensi keahlian Teknik Komputer dan Jaringan didirikan pada tahun 2004 dan sudah memiliki akreditasi <span>A</span></p>
+                <p><span>Keahlian : </span>Peserta didik mampu menjadi seorang teknisi jaringan, administrasi jaringan, network engineer dan menguasai komunikasi. Menginstalasi perangkat komputer personal, menginstal sistem operasi dan aplikasi. Menginstal perangkat jaringan lokal (Local Area Network), menginstal perangkat jaringan berbasis luas (Wide Area Network).</p>
+                <p><span>Model Belajar : </span><i>Teaching Factory</i></p>
+                <p><span>Pohon Kompetensi : </span></p>
+                <p><span>CBT : </span>Beberapa CBT pada kompetensi keahlian Teknik Komputer dan Jaringan di antaranya keahlian, lingkungan dan kewirausahaan.</p>
+                <p><span>Keunggulan : </span>Kompetensi keahlian Teknik Komputer dan Jaringan sudah memiliki sertifikasi internasional seperti CNAP (Cisco Networking Academy Program) dan MCNA (Mikrotik Certified Network Associate).</p>
+                <div class="tkj-img">
+                    <div class="img-tkj">
+                        <img src="img/jurusan-tkj.JPG" alt="TKJ Image">
+                    </div>
+                    <div class="img-tkj1">
+                        <img src="img/jurusan-tkj1.JPG" alt="TKJ Image">
+                    </div>
+                    <div class="img-tkj2">
+                        <img src="img/jurusan-tkj2.JPG" alt="TKJ Image">
+                    </div>
+                    <div class="img-tkj3">
+                        <img src="img/jurusan-tkj3.JPG" alt="TKJ Image">
+                    </div>
+                    <div class="img-tkj4">
+                        <img src="img/jurusan-tkj4.JPG" alt="TKJ Image">
+                    </div>
+                    <div class="img-tkj5">
+                        <img src="img/jurusan-tkj5.JPG" alt="TKJ Image">
+                    </div>
+                    <div class="img-tkj6">
+                        <img src="img/jurusan-tkj6.JPG" alt="TKJ Image">
+                    </div>
+                    <div class="img-tkj7">
+                        <img src="img/jurusan-tkj7.JPG" alt="TKJ Image">
+                    </div>
+                    <p style="color: rgb(15, 15, 15);font-size: 13px;margin: .5%;"><i>KBM Kompetensi Keahlian Teknik Komputer dan Jaringan Wikrama</i></p>
+                </div>
+                <p><span>Mitra Industri : </span></p>
+                <ol type="1">
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Nutrifood Indonesia Bogor</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Ghalia Indonesia Printing</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Hipernet Indodata</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Kabatama Raya</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Indonesia Indicator</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Tirta Fresindo Jaya (Mayora Group)</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">Macro Komputer</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">SEAMEO Biotrop</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Jetcoms Netindo</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Astra Auto Part</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Global TV</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Ricky Putra Globalindo &ndash; Citeureup, Bogor</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Halik Selindo Alpha &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">Semesta Citra Media &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. FS Power Control &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Supra Primatama Nusantara &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">Biznet networks &ndash; Bogor Tengah</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Kahar Duta Sarana &ndash; Jakarta Selatan</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">Kalbis Institute &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">Kementrian Pendidikan dan kebudayaan Direktorat Pembinaan SMK &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">Netcampus Training Center &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Angelina Kartika &ndash; Bogor Selatan</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Pulsa Inti Nasional &ndash; Jakarta Barat</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Pusat Media Indonesia &ndash; Bogor Utara</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Supra Primatama Nusantara (BiznetNetworks) &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Witami Prabuana Cipta &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Amerta Indah Otsuka &ndash; Sukabumi</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Information Technology Service Centre &ndash; Jakarta Pusat</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Jayadipa Mandiri &ndash; Jakarta Selatan</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Netplus Technology &ndash; Jakarta Pusat</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Supra Primatama Nusantara &ndash; Jakarta</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Infotek Jaya Makmur &ndash; Jakarta Utara</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Fiber Networks Indonesia &ndash; Jakarta Selatan</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">PT. Ramtec Global Network Jakarta Timur</span></span></li>
+                    <li style="text-align:justify"><span style="font-size:14px"><span style="font-size:14px">Pusat Penelitian Bioteknologi LIPI &ndash; Bogor, dll.</span></span></li>
+                </ol>
+                <p><span>Fasilitas dan Sarpras : </span>Laboratorium perakitan, perbaikan dan perawatan komputer, laboratorium instalasi jaringan LAN dan laboratorium instalasi jaringan WAN.</p>
+                <p><span>Sertifikasi : </span>TOEIC (Test of English for International Communication), CNAP (Cisco Networking Academy Program), MCNA (Mikrotik Certified Network Associate)</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact2" id="contact2">
+        <div class="contact-info">
+            <h3>CONTACT INFO</h3>
+            <br><br>
+            <a href="#" target="_blank">
+                <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                </svg>
+                <p><span>Ciawi, Bogor Selatan, Jawa Barat, Indonesia</span></p>
+            </a>
+            <hr><br>
+            <a href="https://wa.me/6281290215655" target="_blank">
+                <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                </svg>
+                <p><span>+62 81290215655</span></p>
+            </a>
+            <hr><br>
+            <a href="mailto:yazidakbar08@gmail.com" target="_blank">
+                <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
+                </svg>
+                <p><span>yazidakbar08@gmail.com</span></p>
+            </a>
+            <hr><br>
+            <a href="https://github.com/Yazz803" target="_blank">
+                <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="currentcolor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                </svg>
+                <p><span>Yazz803</span></p>
+            </a>
+            <hr><br>
+            <div class="clear"></div>
+        </div>
+
+        <div class="socialmedia">
+            <h3>SOCIAL MEDIA</h3>
+            <br><br>
+            <a href="https://instagram.com/Yazz_501" target="_blank">
+                <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                </svg>
+                <p><span>@Yazz_501</span></p>
+            </a>
+            <hr><br>
+            <a href="https://web.facebook.com/profile.php?id=100075148972747" target="_blank">
+                <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                </svg>
+                <p>Muhammad Yazid Akbar</p>
+            </a>
+            <hr><br>
+            <a href="https://www.linkedin.com/in/muhammad-yazid-akbar-0b6aaa21b" target="_blank">
+                <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+                </svg>
+                <p>Muhammad Yazid Akbar</p>
+            </a>
+            <hr><br>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <footer>
+        <p>Copyright ©2021 M.Yazid A</p>
+    </footer>
+</body>
+</html>
