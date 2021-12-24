@@ -8,11 +8,7 @@ body {
 body::before {
     content: '';
     position: fixed;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.438),
-        rgba(255, 255, 255, 0.418)
-    ),
-    url(img/GedungWikrama.jpg);
+    background-image: url(img/GedungWikrama.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -224,6 +220,7 @@ body::before {
     height: 100%;
     width: 300px;
     background-color: rgba(0, 0, 0, 0.548);
+    z-index: 9999;
 }
 .sidenav img {
     margin: 10% 18%;
@@ -256,7 +253,7 @@ body::before {
     font-family: Arial, Helvetica, sans-serif;
 }
 .home {
-    height: 623px;
+    padding: 320px 0;
 }
 .logo-responsive {
     display: none;
@@ -265,7 +262,7 @@ body::before {
     color: white;
     margin: 0;
     text-align: center;
-    line-height: 623px;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
 }
 .main.home span {
     color: rgb(22, 22, 189);
@@ -279,6 +276,8 @@ body::before {
     color: white;
     padding: 1.5% 2%;
     margin-top: -1%;
+    position: relative;
+    top: 300px;
 }
 .foto-sejarah {
     height: 300px;
@@ -288,6 +287,8 @@ body::before {
     background-position-y: 0;
     background-size: cover;
     background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
 }
 .sejarah h2 {
     margin-bottom: 0;
@@ -318,6 +319,8 @@ body::before {
     background-color: rgb(255, 255, 255);
     color: white;
     padding: 1% 2%;
+    position: relative;
+    top: 300px;
 }
 .foto-matrikulasi {
     height: 300px;
@@ -326,6 +329,8 @@ body::before {
     margin-left: 320px;
     background-position-y: -120px;
     background-size: cover;
+    position: fixed;
+    z-index: -1;
 }
 .matrikulasi h2 {
     margin-bottom: 0;
@@ -350,6 +355,8 @@ body::before {
     background-color: rgba(255, 255, 255, 1);
     color: white;
     padding: 1% 2%;
+    position: relative;
+    top: 300px;
 }
 .foto-kantin {
     height: 300px;
@@ -358,6 +365,8 @@ body::before {
     margin-left: 320px;
     background-position-y: -200px;
     background-size: cover;
+    position: fixed;
+    z-index: -1;
 }
 .kantin h2 {
     margin-bottom: 0;
@@ -382,6 +391,8 @@ body::before {
     background-color: rgba(255, 255, 255, 1);
     color: white;
     padding: 1% 2%;
+    position: relative;
+    top: 300px;
 }
 .foto-perpus {
     height: 300px;
@@ -390,6 +401,8 @@ body::before {
     margin-left: 320px;
     background-position-y: -100px;
     background-size: cover;
+    position: fixed;
+    z-index: -1;
 }
 .perpus h2 {
     margin-bottom: 0;
@@ -678,6 +691,8 @@ input[type=submit]:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
+    position: relative;
+    top: 300px;
 }
 .contact-info {
     width: 45%;
@@ -721,6 +736,8 @@ footer {
     padding: 30px 30px;
     margin-left: 320px;
     margin-right: 2%;
+    position: relative;
+    top: 300px;
 }
 footer p {
     margin: 0;
@@ -760,7 +777,6 @@ footer p {
         background-repeat: no-repeat;
         display: flex;
         justify-content: space-around;
-        opacity: .5;
         margin-top: -250px;
     }
     .main.home h1 {
@@ -772,6 +788,7 @@ footer p {
         width: 100%;
         margin-left: 0;
         box-sizing: border-box;
+        padding: 0;
     }
     .sejarah p, .sejarah ul li, .matrikulasi p, 
     .kantin p, .perpus p, .perpus li, .perpus a, 
