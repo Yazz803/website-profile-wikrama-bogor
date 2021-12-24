@@ -795,11 +795,23 @@ footer p {
     .tentang-rpl p, .tentang-rpl ol li, .tentang-otkp p, 
     .tentang-otkp ol li, .tentang-tkj p, .tentang-tkj ol li {
         font-size: 14px;
-        text-align: left;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sejarah, .matrikulasi, .kantin, .perpus {
+        padding-bottom: 20px;
+    }
+    .sejarah ul {
+        padding-inline-start: 30px;
+    }
+    ol {
+        padding-inline-start: 30px;
     }
     .sejarah h2, .matrikulasi h2, .kantin h2, .perpus h2, 
     .tentang-rpl h2, .tentang-otkp h2, .tentang-tkj h2 {
         text-align: center;
+        padding-top: 20px;
     }
     .matrikulasi .matrikulasi-img img {
         width: 300px;
@@ -820,14 +832,12 @@ footer p {
         width: 100%;
         background-position-y: 0;
         background-position-x: -50px;
-        margin-top: 50px;
     }
     .foto-perpus {
         margin-left: 0;
         width: 100%;
         background-position-y: 0;
         background-position-x: 0;
-        margin-top: 50px;
     }
     .foto-rpl {
         background-position-y: 0;
@@ -882,6 +892,7 @@ footer p {
         float: none;
         margin-left: 0;
         margin-right: 0;
+        margin-top: -18px;
     }
     .contact-info {
         float: none;
