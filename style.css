@@ -702,6 +702,9 @@ input[type=submit]:hover {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+.contact-info .contact-wk1 {
+    display: none;
+}
 .contact-info p {
     margin: 0;
     padding-top: 5px;
@@ -725,9 +728,42 @@ input[type=submit]:hover {
     margin: 0;
     padding-top: 5px;
 }
+.socialmedia .contact-wk1 {
+    display: none;
+}
 .socialmedia svg {
     float: left;
     margin-right: 20px;
+}
+
+/* contact info smk wikrama */
+.contact-wk {
+    width: 100%;
+}
+.contact-wk .contact-wk1 {
+    display: none;
+}
+.contact-wk  a {
+    text-decoration: none;
+    color: white;
+}
+.contact-wk svg {
+    float: left;
+    margin-right: 20px;
+}
+.contact-wk p {
+    margin: 0;
+    padding-top: 5px;
+}
+.contact-info-wk {
+    width: 45%;
+    float: left;
+}
+
+.social-media-wk {
+    width: 45%;
+    float: left;
+    margin-left: 5%;
 }
 
 /* footer */
@@ -901,9 +937,13 @@ footer p {
     }
     .contact-info h3 {
         margin-bottom: 0;
+        text-align: center;
     }
     .contact-info hr {
         display: none;
+    }
+    .contact-info .contact-wk1, .socialmedia .contact-wk1 {
+        display: block;
     }
     .contact-info svg, .contact-info p {
         margin-top: 5%;
@@ -915,11 +955,37 @@ footer p {
     }
     .socialmedia h3 {
         margin-bottom: 0;
+        text-align: center;
     }
     .socialmedia hr {
         display: none;
     }
     .socialmedia svg, .socialmedia p {
+        margin-top: 5%;
+    }
+    .contact-wk h3 {
+        text-align: center;
+    }
+    .contact-wk .contact-wk1 {
+        display: block;
+    }
+    .contact-info-wk {
+        width: 100%;
+    }
+    .contact-info-wk hr {
+        display: none;
+    }
+    .contact-info-wk svg, .contact-info-wk p {
+        margin-top: 5%;
+    }
+    .social-media-wk {
+        width: 100%;
+        margin-left: 0;
+    }
+    .social-media-wk hr {
+        display: none;
+    }
+    .social-media-wk svg, .social-media-wk p {
         margin-top: 5%;
     }
     /* end contact2 */
