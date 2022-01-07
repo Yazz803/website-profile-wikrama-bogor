@@ -30,6 +30,7 @@ body::before {
     border-radius: 50%;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 .list-jurusan {
     display: none;
